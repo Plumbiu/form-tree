@@ -1,0 +1,45 @@
+{
+  "name": "form-tree",
+  "version": "0.0.1",
+  "description": "build tree with simple API.",
+  "author": "Plumbiu",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "pnpm vitest --run",
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plumbiu/form-tree"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.mjs",
+        "types": "./dist/index.d.mts"
+      },
+      "require": {
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
+  "keywords": [
+    "tree",
+    "algorithm",
+    "util",
+    "node"
+  ],
+  "devDependencies": {
+    "@plumbiu/eslint-config": "^0.2.0",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  }
+}
