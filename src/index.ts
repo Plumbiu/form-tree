@@ -22,7 +22,7 @@ export const buildTree = (
 ) => {
   const { id: rootId, parentId, ...rest } = props[0]
   if (parentId) {
-    return
+    throw new Error('First element should not have parentId')
   }
   const rootItem = {
     id: rootId,
